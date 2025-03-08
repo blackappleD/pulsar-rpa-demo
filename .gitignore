@@ -1,0 +1,13 @@
+# Project exclude paths
+/ff14_market_subscribe_backend/.gradle/
+/ff14_market_subscribe_backend/build/
+/ff14_market_subscribe_backend/build/classes/java/main/
+*/bin/
+*.log
+/ff14_market_subscribe_backend/.idea/
+/ff14_market_subscribe_frontend/node_modules/
+/ff14_market_subscribe_frontend/dist/
+/.idea/
+
+# Project exclude paths
+/.gradle/

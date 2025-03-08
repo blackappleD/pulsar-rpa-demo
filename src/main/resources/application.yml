@@ -1,0 +1,48 @@
+server:
+  port: 18888
+
+spring:
+  application:
+    name: ff14-market-subscribe
+  datasource:
+    url: "jdbc:mysql://127.0.0.1:3306/ff14_market"
+    username: root
+    password: P@ssW0rd1874
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  data:
+    redis:
+      host: 192.168.1.77
+      port: 6379
+      database: 0
+
+springdoc:
+  default-produces-media-type: application/json
+  api-docs:
+    enabled: true
+  swagger-ui:
+    tags-sorter: alpha
+    operations-sorter: alpha
+mail:
+  smtp:
+    host: smtp.163.com
+    port: 465
+    mail-from: aChen1996kkxx@163.com
+    password: FWS3Y37CKuDSE7fG
+auth:
+  jwt:
+    enable: true
+    expire: 43200000
+cache:
+  mode: caffeine
+
+cursor:
+  expire-days: 30
+item:
+  force-update: false
